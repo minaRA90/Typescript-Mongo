@@ -10,7 +10,7 @@ export const CarSchema: JSONSchema = {
     type: 'object',
     properties: {
         manufacturer: {
-            $ref : '#/components/schemas/Manufacturer'
+            $ref: '#/components/schemas/Manufacturer',
         },
         brand: {
             type: 'string',
@@ -26,5 +26,5 @@ export const CarSchema: JSONSchema = {
         },
     },
     required: ['manufacturer', 'brand', 'color'],
-    additionalProperties: false
+    additionalProperties: false,
 };

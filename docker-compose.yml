@@ -5,6 +5,7 @@ services:
       build : .
       environment:
         NODE_ENV: production
+        LOG_LEVEL: info
         MONGO_USER: admin
         MONGO_PASSWORD: password
         MONGO_PATH: mongodb:27017/cars

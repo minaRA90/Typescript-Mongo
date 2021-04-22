@@ -35,7 +35,14 @@ docker compose down
 ### local development
 
 - To set environment variables (i.e connection to MongoDB , port..etc)
-adjust local .env file
+create a local .env file
+with below environment variables
+NODE_ENV=development
+LOG_LEVEL= info
+MONGO_USER=
+MONGO_PASSWORD=
+MONGO_PATH=
+PORT=
 
 - To build and start application for local development
 ```bash

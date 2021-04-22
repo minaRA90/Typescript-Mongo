@@ -20,9 +20,9 @@ export const ManufacturerSchema: JSONSchema = {
         factoryLocation: {
             type: 'array',
             items: {
-                type: 'number'
-              }
+                type: 'number',
             },
+        },
     },
     required: ['companyName', 'country'],
     additionalProperties: false,

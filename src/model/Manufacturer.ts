@@ -10,7 +10,7 @@ export interface Manufacturer extends Document {
 }
 
 /**
- * Define Car Manufacturer mongoose model Schema.
+ * Define Car Manufacturer mongoose internal model Schema.
  */
 export const ManufacturerModelSchema: Schema = new Schema({
     companyName: { type: String, required: true },
