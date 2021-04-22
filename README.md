@@ -10,8 +10,8 @@ Project also illustartes usages of some npm packages
 
 # Build
 ## Prerequisites
-NodeJS version >=14.16.1 (LTS)
-Docker
+- NodeJS version >=14.16.1 (LTS)
+- Docker
 
 ## Build
 
@@ -20,15 +20,15 @@ Project comes with a docker-compose.yml file that contains 3 docker images
 - mongodb, to provide needed mongodb server.
 - mongo-express, to provide a UI to view data in mongodb.
 
-To build and start all containers
+- To build and start all containers
 ```bash
 docker compose up -d
 ```
 
-To access swaagger ui
+- To access swaagger ui
 http://localhost:8080/docs/
 
-To stop all containers
+- To stop all containers
 
 ```bash
 docker compose down d
@@ -36,7 +36,7 @@ docker compose down d
 
 ### local development
 
-To set environment variables (i.e connection to MongoDB , port..etc)
+- To set environment variables (i.e connection to MongoDB , port..etc)
 adjust local .env file
 
 - To build and start application for local development
