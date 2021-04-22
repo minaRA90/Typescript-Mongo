@@ -17,9 +17,6 @@
     "build": "npm run clean && npm run compile",
     "compile": "node node_modules/typescript/bin/tsc -p ./tsconfig.json",
     "lint": "eslint '*/**/*.{js,ts}' --quiet --fix",
-    "test": "npm run lint && npm run test-unit",
-    "test-unit": "node node_modules/jest/bin/jest.js",
-    "test-unit-watch": "node node_modules/jest/bin/jest.js --watch",
     "reset": "rm -rf ./node_modules && rm -rf ./dist && npm install && npm run build"
   },
   "repository": {
