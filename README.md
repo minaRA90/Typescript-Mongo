@@ -8,7 +8,6 @@ Project also illustartes usages of some npm packages
 -  eslint and prettier for linting support and auto-fix of linting indentation errors
 - winston for creating a custom logger that uses winston logger.
 
-# Build
 ## Prerequisites
 - NodeJS version >=14.16.1 (LTS)
 - Docker
