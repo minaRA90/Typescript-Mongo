@@ -30,7 +30,7 @@ http://localhost:8080/docs/
 
 To stop all containers
 ```bash
-docker compose down d
+docker compose down
 ```
 
 ### local development
