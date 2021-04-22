@@ -20,16 +20,15 @@ Project comes with a docker-compose.yml file that contains 3 docker images
 - mongodb, to provide needed mongodb server.
 - mongo-express, to provide a UI to view data in mongodb.
 
-- To build and start all containers
+To build and start all containers
 ```bash
 docker compose up -d
 ```
 
-- To access swaagger ui
+To access swaagger ui
 http://localhost:8080/docs/
 
-- To stop all containers
-
+To stop all containers
 ```bash
 docker compose down d
 ```
