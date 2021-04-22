@@ -1,10 +1,10 @@
 {
   "$schema": "http://json.schemastore.org/package",
-  "name": "typescript-mongo-kafka",
+  "name": "typescript-mongo",
   "version": "0.0.1",
-  "description": "Illustrates MongoDB and Kafka usages using Typescript",
+  "description": "Illustrates MongoDB Moongose and express server usages using Typescript",
   "engines": {
-    "node": "14.16.1"
+    "node": ">=14.16.1"
   },
   "main": "dist/src/server.js",
   "files": [
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:minaRA90/Typescript-Mongo-Kafka.git"
+    "url": "git@github.com:minaRA90/Typescript-Mongo.git"
   },
   "author": "MRI",
   "license": "Apache-2.0",
