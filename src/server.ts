@@ -3,7 +3,7 @@ import { App } from './app';
 import { validateEnv } from './util/validateEnv';
 import { CarController } from './controller/CarController';
 
-if (process.env.NODE_ENV === 'development') {
+if (process.env.NODE_ENV !== 'production') {
     dotenv.config();
 }
 

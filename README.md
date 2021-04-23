@@ -39,11 +39,11 @@ create a local .env file
 with below environment variables
 NODE_ENV=development
 LOG_LEVEL= info
-MONGO_USER=
-MONGO_PASSWORD=
-MONGO_PATH=
-PORT=
-
+MONGO_USER= <mongo db username>
+MONGO_PASSWORD= <Mongo db password>
+MONGO_PATH= <path for Mongo DB>
+PORT= <express server port>
+API_KEYS= <comma separated API keys that request x-api-key will be validated aganist>
 - To build and start application for local development
 ```bash
 npm install && npm run build && npm run start

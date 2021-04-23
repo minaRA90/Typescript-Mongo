@@ -10,6 +10,7 @@ services:
         MONGO_PASSWORD: password
         MONGO_PATH: mongodb:27017/cars
         PORT: 8080
+        API_KEYS: pzNbH9kYKUtHPiUcy4tOXQ==,rLDHI/th2aIKkhVdPbdAAA==
       ports:
         - "8080:8080"
       depends_on: 

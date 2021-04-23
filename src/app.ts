@@ -5,6 +5,7 @@ import { Controller } from './base/Controller';
 import { MODULE_NAME } from './constants';
 import { Logger } from './util/Logger';
 import { OASDoc } from './OASConfig';
+import { validateKey } from './middleware/ApiKey';
 
 const logger = new Logger(__filename, MODULE_NAME);
 
@@ -36,6 +37,7 @@ export class App {
     private initializeMiddlewares() {
         this.app.use(express.urlencoded({ extended: true }));
         this.app.use(express.json());
+        this.app.use(validateKey);
     }
 
     private initializeRoutes(controllers: Controller[]) {

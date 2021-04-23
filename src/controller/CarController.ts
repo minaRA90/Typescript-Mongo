@@ -39,6 +39,12 @@ export class CarController implements Controller {
          * /car/create:
          *   post:
          *    description: Create  new car
+         *    parameters:
+         *       - in: header
+         *         name: x-api-key
+         *         schema:
+         *            type: string
+         *         required: true
          *    requestBody:
          *        required: true
          *        content:
@@ -58,6 +64,12 @@ export class CarController implements Controller {
          * /car/all:
          *   get:
          *     description: get all cars
+         *     parameters:
+         *        - in: header
+         *          name: x-api-key
+         *          schema:
+         *            type: string
+         *          required: true
          *     responses:
          *       200:
          *         description: Returns car list.
@@ -82,6 +94,12 @@ export class CarController implements Controller {
          *          name: id
          *          schema:
          *            type: string
+         *          required: true
+         *        - in: header
+         *          name: x-api-key
+         *          schema:
+         *            type: string
+         *          required: true
          *     responses:
          *       200:
          *         description: Returns car.
@@ -104,6 +122,12 @@ export class CarController implements Controller {
          *          name: id
          *          schema:
          *            type: string
+         *          required: true
+         *        - in: header
+         *          name: x-api-key
+         *          schema:
+         *            type: string
+         *          required: true
          *     responses:
          *       200:
          *         description: successfull deletion.
@@ -122,6 +146,12 @@ export class CarController implements Controller {
          *         name: id
          *         schema:
          *            type: string
+         *         required: true
+         *       - in: header
+         *         name: x-api-key
+         *         schema:
+         *            type: string
+         *         required: true
          *    requestBody:
          *        required: true
          *        content:
