@@ -1,7 +1,7 @@
 import swaggerUi from 'swagger-ui-express';
 import mongoose from 'mongoose';
 import express from 'express';
-import { Controller } from './base/Controller';
+import { Controller } from './controller/Controller';
 import { MODULE_NAME } from './constants';
 import { Logger } from './util/Logger';
 import { OASDoc } from './OASConfig';

@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { Controller } from '../base/Controller';
+import { Controller } from './Controller';
 import { Car, CarModel as CarMongooseModel } from '../model/Car';
 import Ajv, { ValidateFunction } from 'ajv';
 import { MODULE_NAME } from '../constants';

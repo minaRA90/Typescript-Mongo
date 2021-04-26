@@ -83,14 +83,12 @@ export class Logger {
     }
 
     /**
-     * This method formats log message it combines log arguments, logging metadata stored in http-express-context
-     * and also handle error objects formating.
+     * This method formats log message it combines and also handle error objects formating.
      *
      * @param info represents a single log message data object (TransformableInfo), the object itself is mutable.
      * Every info must have at least the @property level, @property message
      * timestamp is added under @property timestamp by winston.format.timestamp()
      * Additional metadata are under @property metadata, its an array of objects, where each element is one of log message arguments
-     * The loggerInstanceContext is the first element in @property metadata
      *
      */
     public formatLogMessage(info: TransformableInfo): string {
@@ -98,7 +96,7 @@ export class Logger {
         // Add log message if exists
         logMessage += info.message ? `[${info.message}]` : '';
 
-        // format rest of log arguments
+        // format log arguments
         for (let i = 0; i < Object.keys(info.metadata).length; i++) {
             const obj = info.metadata[i];
             if (obj instanceof Error) {
