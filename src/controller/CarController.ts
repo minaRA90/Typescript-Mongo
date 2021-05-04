@@ -16,7 +16,7 @@ ajv.addSchema(CarSchema, '#/components/schemas/Car');
 
 /**
  * Car controller that exposes below endpoints:
- * - /car/crear
+ * - /car/create
  * - /car/all
  * - /car/{id}
  * - /car/{id}/delete

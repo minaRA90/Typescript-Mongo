@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { App } from './app';
+import { Application } from './Application';
 import { validateEnv } from './util/validateEnv';
 import { CarController } from './controller/CarController';
 
@@ -13,6 +13,6 @@ validateEnv();
 /**
  * Strat application with Car controllers
  */
-const app = new App([new CarController()]);
+const app = new Application([new CarController()]);
 
 app.listen();

@@ -18,34 +18,34 @@ const logger = new Logger(__filename, MODULE_NAME);
  * - Initialize used controllers
  * - Initailize OpenAPI Specification document (OAS)
  */
-export class App {
-    public app: express.Application;
+export class Application {
+    public expressInstance: express.Application;
 
     constructor(controllers: Controller[]) {
-        this.app = express();
+        this.expressInstance = express();
         this.mongoDBConnect();
         this.initializeMiddlewares();
         this.initializeRoutes(controllers);
     }
 
     public listen() {
-        this.app.listen(process.env.PORT, () => {
+        this.expressInstance.listen(process.env.PORT, () => {
             logger.info(`App is running here 👉 https://localhost:${process.env.PORT}`);
         });
     }
 
     private initializeMiddlewares() {
-        this.app.use(express.urlencoded({ extended: true }));
-        this.app.use(express.json());
-        this.app.use(validateKey);
+        this.expressInstance.use(express.urlencoded({ extended: true }));
+        this.expressInstance.use(express.json());
+        this.expressInstance.use(validateKey);
     }
 
     private initializeRoutes(controllers: Controller[]) {
         controllers.forEach((controller) => {
-            this.app.use('/', controller.router);
+            this.expressInstance.use('/', controller.router);
         });
 
-        this.app.use('/docs', swaggerUi.serve, swaggerUi.setup(OASDoc));
+        this.expressInstance.use('/docs', swaggerUi.serve, swaggerUi.setup(OASDoc));
     }
 
     /**
